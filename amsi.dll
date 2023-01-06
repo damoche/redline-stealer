@@ -1,0 +1,84 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.06",
+  "_type": "_doc",
+  "_id": "7R7oh4UBpU7oyHcq_wCn",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.134",
+      "name": "DESKTOP-FUGQNF4",
+      "id": "004"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "amsi.dll",
+          "image": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\redline.exe",
+          "product": "Microsoft® Windows® Operating System",
+          "signature": "Microsoft Windows",
+          "imageLoaded": "C:\\\\Windows\\\\SysWOW64\\\\amsi.dll",
+          "description": "Anti-Malware Scan Interface",
+          "signed": "true",
+          "signatureStatus": "Valid",
+          "processGuid": "{2db9add9-4bfd-63b8-ac04-000000000d00}",
+          "processId": "5060",
+          "utcTime": "2023-01-06 16:27:46.920",
+          "hashes": "SHA1=23A892ED7A03FD8FE34B5C7C4340765DF13AA881,MD5=3F5A9AB40BCB48FE75AD52BDF8D4A49F,SHA256=73618405E088D714258AEAEE5A41DEE8269D465BBD30C5ACF8E7A94C133CC1B4,IMPHASH=5D28867D6E8659CB14ADCCE290AB3709",
+          "ruleName": "technique_id=T1059.001,technique_name=PowerShell",
+          "company": "Microsoft Corporation",
+          "fileVersion": "10.0.19041.1620 (WinBuild.160101.0800)",
+          "user": "DESKTOP-FUGQNF4\\\\Administrator"
+        },
+        "system": {
+          "eventID": "7",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Image loaded:\r\nRuleName: technique_id=T1059.001,technique_name=PowerShell\r\nUtcTime: 2023-01-06 16:27:46.920\r\nProcessGuid: {2db9add9-4bfd-63b8-ac04-000000000d00}\r\nProcessId: 5060\r\nImage: C:\\Users\\Administrator\\Desktop\\redline.exe\r\nImageLoaded: C:\\Windows\\SysWOW64\\amsi.dll\r\nFileVersion: 10.0.19041.1620 (WinBuild.160101.0800)\r\nDescription: Anti-Malware Scan Interface\r\nProduct: Microsoft® Windows® Operating System\r\nCompany: Microsoft Corporation\r\nOriginalFileName: amsi.dll\r\nHashes: SHA1=23A892ED7A03FD8FE34B5C7C4340765DF13AA881,MD5=3F5A9AB40BCB48FE75AD52BDF8D4A49F,SHA256=73618405E088D714258AEAEE5A41DEE8269D465BBD30C5ACF8E7A94C133CC1B4,IMPHASH=5D28867D6E8659CB14ADCCE290AB3709\r\nSigned: true\r\nSignature: Microsoft Windows\r\nSignatureStatus: Valid\r\nUser: DESKTOP-FUGQNF4\\Administrator\"",
+          "version": "3",
+          "systemTime": "2023-01-06T16:27:47.0049210Z",
+          "eventRecordID": "9808",
+          "threadID": "2612",
+          "computer": "DESKTOP-FUGQNF4",
+          "task": "7",
+          "processID": "2600",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"7\",\"version\":\"3\",\"level\":\"4\",\"task\":\"7\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-06T16:27:47.0049210Z\",\"eventRecordID\":\"9808\",\"processID\":\"2600\",\"threadID\":\"2612\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"DESKTOP-FUGQNF4\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Image loaded:\\r\\nRuleName: technique_id=T1059.001,technique_name=PowerShell\\r\\nUtcTime: 2023-01-06 16:27:46.920\\r\\nProcessGuid: {2db9add9-4bfd-63b8-ac04-000000000d00}\\r\\nProcessId: 5060\\r\\nImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\redline.exe\\r\\nImageLoaded: C:\\\\Windows\\\\SysWOW64\\\\amsi.dll\\r\\nFileVersion: 10.0.19041.1620 (WinBuild.160101.0800)\\r\\nDescription: Anti-Malware Scan Interface\\r\\nProduct: Microsoft® Windows® Operating System\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: amsi.dll\\r\\nHashes: SHA1=23A892ED7A03FD8FE34B5C7C4340765DF13AA881,MD5=3F5A9AB40BCB48FE75AD52BDF8D4A49F,SHA256=73618405E088D714258AEAEE5A41DEE8269D465BBD30C5ACF8E7A94C133CC1B4,IMPHASH=5D28867D6E8659CB14ADCCE290AB3709\\r\\nSigned: true\\r\\nSignature: Microsoft Windows\\r\\nSignatureStatus: Valid\\r\\nUser: DESKTOP-FUGQNF4\\\\Administrator\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1059.001,technique_name=PowerShell\",\"utcTime\":\"2023-01-06 16:27:46.920\",\"processGuid\":\"{2db9add9-4bfd-63b8-ac04-000000000d00}\",\"processId\":\"5060\",\"image\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\redline.exe\",\"imageLoaded\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\amsi.dll\",\"fileVersion\":\"10.0.19041.1620 (WinBuild.160101.0800)\",\"description\":\"Anti-Malware Scan Interface\",\"product\":\"Microsoft® Windows® Operating System\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"amsi.dll\",\"hashes\":\"SHA1=23A892ED7A03FD8FE34B5C7C4340765DF13AA881,MD5=3F5A9AB40BCB48FE75AD52BDF8D4A49F,SHA256=73618405E088D714258AEAEE5A41DEE8269D465BBD30C5ACF8E7A94C133CC1B4,IMPHASH=5D28867D6E8659CB14ADCCE290AB3709\",\"signed\":\"true\",\"signature\":\"Microsoft Windows\",\"signatureStatus\":\"Valid\",\"user\":\"DESKTOP-FUGQNF4\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-06T16:27:47.839Z",
+    "location": "EventChannel",
+    "id": "1673022467.3289562",
+    "timestamp": "2023-01-06T16:27:47.839+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-06T16:27:47.839Z"
+    ],
+    "timestamp": [
+      "2023-01-06T16:27:47.839Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@DESKTOP-FUGQNF4@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1673022467839
+  ]
+}
