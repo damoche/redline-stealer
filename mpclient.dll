@@ -1,0 +1,84 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.06",
+  "_type": "_doc",
+  "_id": "7x7oh4UBpU7oyHcq_wCn",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.134",
+      "name": "DESKTOP-FUGQNF4",
+      "id": "004"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "mpclient.dll",
+          "image": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\redline.exe",
+          "product": "Microsoft® Windows® Operating System",
+          "signature": "Microsoft Windows",
+          "imageLoaded": "C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.2211.5-0\\\\X86\\\\MpClient.dll",
+          "description": "Client Interface",
+          "signed": "true",
+          "signatureStatus": "Valid",
+          "processGuid": "{2db9add9-4bfd-63b8-ac04-000000000d00}",
+          "processId": "5060",
+          "utcTime": "2023-01-06 16:27:46.999",
+          "hashes": "SHA1=DB35E7BA4F48920E8133DC0AFB7DFF9563F7BAC9,MD5=23002C9B3EBB08609398AFB4B377E917,SHA256=6BEEFEE8022DC98DACD1A1E08AFDCF645B40413C8B21639AB8C0B192193F7120,IMPHASH=BDD5F79A6614031AE0DE5DC5A06757FE",
+          "ruleName": "technique_id=T1073,technique_name=DLL Side-Loading",
+          "company": "Microsoft Corporation",
+          "fileVersion": "4.18.2211.5 (WinBuild.160101.0800)",
+          "user": "DESKTOP-FUGQNF4\\\\Administrator"
+        },
+        "system": {
+          "eventID": "7",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Image loaded:\r\nRuleName: technique_id=T1073,technique_name=DLL Side-Loading\r\nUtcTime: 2023-01-06 16:27:46.999\r\nProcessGuid: {2db9add9-4bfd-63b8-ac04-000000000d00}\r\nProcessId: 5060\r\nImage: C:\\Users\\Administrator\\Desktop\\redline.exe\r\nImageLoaded: C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.2211.5-0\\X86\\MpClient.dll\r\nFileVersion: 4.18.2211.5 (WinBuild.160101.0800)\r\nDescription: Client Interface\r\nProduct: Microsoft® Windows® Operating System\r\nCompany: Microsoft Corporation\r\nOriginalFileName: mpclient.dll\r\nHashes: SHA1=DB35E7BA4F48920E8133DC0AFB7DFF9563F7BAC9,MD5=23002C9B3EBB08609398AFB4B377E917,SHA256=6BEEFEE8022DC98DACD1A1E08AFDCF645B40413C8B21639AB8C0B192193F7120,IMPHASH=BDD5F79A6614031AE0DE5DC5A06757FE\r\nSigned: true\r\nSignature: Microsoft Windows\r\nSignatureStatus: Valid\r\nUser: DESKTOP-FUGQNF4\\Administrator\"",
+          "version": "3",
+          "systemTime": "2023-01-06T16:27:47.0449618Z",
+          "eventRecordID": "9810",
+          "threadID": "2612",
+          "computer": "DESKTOP-FUGQNF4",
+          "task": "7",
+          "processID": "2600",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"7\",\"version\":\"3\",\"level\":\"4\",\"task\":\"7\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-06T16:27:47.0449618Z\",\"eventRecordID\":\"9810\",\"processID\":\"2600\",\"threadID\":\"2612\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"DESKTOP-FUGQNF4\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Image loaded:\\r\\nRuleName: technique_id=T1073,technique_name=DLL Side-Loading\\r\\nUtcTime: 2023-01-06 16:27:46.999\\r\\nProcessGuid: {2db9add9-4bfd-63b8-ac04-000000000d00}\\r\\nProcessId: 5060\\r\\nImage: C:\\\\Users\\\\Administrator\\\\Desktop\\\\redline.exe\\r\\nImageLoaded: C:\\\\ProgramData\\\\Microsoft\\\\Windows Defender\\\\Platform\\\\4.18.2211.5-0\\\\X86\\\\MpClient.dll\\r\\nFileVersion: 4.18.2211.5 (WinBuild.160101.0800)\\r\\nDescription: Client Interface\\r\\nProduct: Microsoft® Windows® Operating System\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: mpclient.dll\\r\\nHashes: SHA1=DB35E7BA4F48920E8133DC0AFB7DFF9563F7BAC9,MD5=23002C9B3EBB08609398AFB4B377E917,SHA256=6BEEFEE8022DC98DACD1A1E08AFDCF645B40413C8B21639AB8C0B192193F7120,IMPHASH=BDD5F79A6614031AE0DE5DC5A06757FE\\r\\nSigned: true\\r\\nSignature: Microsoft Windows\\r\\nSignatureStatus: Valid\\r\\nUser: DESKTOP-FUGQNF4\\\\Administrator\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1073,technique_name=DLL Side-Loading\",\"utcTime\":\"2023-01-06 16:27:46.999\",\"processGuid\":\"{2db9add9-4bfd-63b8-ac04-000000000d00}\",\"processId\":\"5060\",\"image\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Desktop\\\\\\\\redline.exe\",\"imageLoaded\":\"C:\\\\\\\\ProgramData\\\\\\\\Microsoft\\\\\\\\Windows Defender\\\\\\\\Platform\\\\\\\\4.18.2211.5-0\\\\\\\\X86\\\\\\\\MpClient.dll\",\"fileVersion\":\"4.18.2211.5 (WinBuild.160101.0800)\",\"description\":\"Client Interface\",\"product\":\"Microsoft® Windows® Operating System\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"mpclient.dll\",\"hashes\":\"SHA1=DB35E7BA4F48920E8133DC0AFB7DFF9563F7BAC9,MD5=23002C9B3EBB08609398AFB4B377E917,SHA256=6BEEFEE8022DC98DACD1A1E08AFDCF645B40413C8B21639AB8C0B192193F7120,IMPHASH=BDD5F79A6614031AE0DE5DC5A06757FE\",\"signed\":\"true\",\"signature\":\"Microsoft Windows\",\"signatureStatus\":\"Valid\",\"user\":\"DESKTOP-FUGQNF4\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-06T16:27:47.929Z",
+    "location": "EventChannel",
+    "id": "1673022467.3289562",
+    "timestamp": "2023-01-06T16:27:47.929+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-06T16:27:47.929Z"
+    ],
+    "timestamp": [
+      "2023-01-06T16:27:47.929Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@DESKTOP-FUGQNF4@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1673022467929
+  ]
+}
