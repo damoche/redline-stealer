@@ -1,0 +1,86 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.10",
+  "_type": "_doc",
+  "_id": "2CSqmoUB6tWvkp2uKVgD",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "10.0.16.136",
+      "name": "windows",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "UrlMon.dll",
+          "image": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe",
+          "product": "Internet Explorer",
+          "signature": "Microsoft Windows",
+          "imageLoaded": "C:\\\\Windows\\\\SysWOW64\\\\urlmon.dll",
+          "description": "OLE32 Extensions for Win32",
+          "signed": "true",
+          "signatureStatus": "Valid",
+          "processGuid": "{6656408f-191e-63bd-e501-000000000900}",
+          "processId": "3056",
+          "utcTime": "2023-01-10 07:51:58.545",
+          "hashes": "SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0",
+          "company": "Microsoft Corporation",
+          "fileVersion": "11.00.19041.2251 (WinBuild.160101.0800)",
+          "user": "WINDOWS\\\\wazuh"
+        },
+        "system": {
+          "eventID": "7",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Image loaded:\r\nRuleName: -\r\nUtcTime: 2023-01-10 07:51:58.545\r\nProcessGuid: {6656408f-191e-63bd-e501-000000000900}\r\nProcessId: 3056\r\nImage: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\r\nImageLoaded: C:\\Windows\\SysWOW64\\urlmon.dll\r\nFileVersion: 11.00.19041.2251 (WinBuild.160101.0800)\r\nDescription: OLE32 Extensions for Win32\r\nProduct: Internet Explorer\r\nCompany: Microsoft Corporation\r\nOriginalFileName: UrlMon.dll\r\nHashes: SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\r\nSigned: true\r\nSignature: Microsoft Windows\r\nSignatureStatus: Valid\r\nUser: WINDOWS\\wazuh\"",
+          "version": "3",
+          "systemTime": "2023-01-10T07:51:58.5477637Z",
+          "eventRecordID": "40035",
+          "threadID": "3908",
+          "computer": "windows",
+          "task": "7",
+          "processID": "2644",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"7\",\"version\":\"3\",\"level\":\"4\",\"task\":\"7\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.5477637Z\",\"eventRecordID\":\"40035\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Image loaded:\\r\\nRuleName: -\\r\\nUtcTime: 2023-01-10 07:51:58.545\\r\\nProcessGuid: {6656408f-191e-63bd-e501-000000000900}\\r\\nProcessId: 3056\\r\\nImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\r\\nImageLoaded: C:\\\\Windows\\\\SysWOW64\\\\urlmon.dll\\r\\nFileVersion: 11.00.19041.2251 (WinBuild.160101.0800)\\r\\nDescription: OLE32 Extensions for Win32\\r\\nProduct: Internet Explorer\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: UrlMon.dll\\r\\nHashes: SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\\r\\nSigned: true\\r\\nSignature: Microsoft Windows\\r\\nSignatureStatus: Valid\\r\\nUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"utcTime\":\"2023-01-10 07:51:58.545\",\"processGuid\":\"{6656408f-191e-63bd-e501-000000000900}\",\"processId\":\"3056\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\",\"imageLoaded\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\urlmon.dll\",\"fileVersion\":\"11.00.19041.2251 (WinBuild.160101.0800)\",\"description\":\"OLE32 Extensions for Win32\",\"product\":\"Internet Explorer\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"UrlMon.dll\",\"hashes\":\"SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\",\"signed\":\"true\",\"signature\":\"Microsoft Windows\",\"signatureStatus\":\"Valid\",\"user\":\"WINDOWS\\\\\\\\wazuh\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-10T07:51:59.169Z",
+    "location": "EventChannel",
+    "id": "1673337119.430663",
+    "timestamp": "2023-01-10T07:51:59.169+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-10T07:51:59.169Z"
+    ],
+    "timestamp": [
+      "2023-01-10T07:51:59.169Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@windows@/opensearch-dashboards-highlighted-field@"
+    ],
+    "full_log": [
+      "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"7\",\"version\":\"3\",\"level\":\"4\",\"task\":\"7\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.5477637Z\",\"eventRecordID\":\"40035\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Image loaded:\\r\\nRuleName: -\\r\\nUtcTime: 2023-01-10 07:51:58.545\\r\\nProcessGuid: {6656408f-191e-63bd-e501-000000000900}\\r\\nProcessId: 3056\\r\\nImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\r\\nImageLoaded: C:\\\\Windows\\\\SysWOW64\\\\urlmon.dll\\r\\nFileVersion: 11.00.19041.2251 (WinBuild.160101.0800)\\r\\nDescription: OLE32 Extensions for Win32\\r\\nProduct: Internet Explorer\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: UrlMon.dll\\r\\nHashes: SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\\r\\nSigned: true\\r\\nSignature: Microsoft Windows\\r\\nSignatureStatus: Valid\\r\\nUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"utcTime\":\"2023-01-10 07:51:58.545\",\"processGuid\":\"{6656408f-191e-63bd-e501-000000000900}\",\"processId\":\"3056\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\",\"imageLoaded\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\urlmon.dll\",\"fileVersion\":\"11.00.19041.2251 (WinBuild.160101.0800)\",\"description\":\"OLE32 Extensions for Win32\",\"product\":\"Internet Explorer\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"UrlMon.dll\",\"hashes\":\"SHA1=6D36F794B64D2B8523D6D553C387AA4BDEDA0C11,MD5=69593045E14F379979E0FC24EBE4FCB9,SHA256=3935AB7776A9315D41E64B75E522D7CAA56EDE8E3E89C428505B0D42D8513599,IMPHASH=38D69F1211D9CF420A0045569518C0E0\",\"signed\":\"true\",\"signature\":\"Microsoft Windows\",\"signatureStatus\":\"Valid\",\"user\":\"WINDOWS\\\\\\\\wazuh\"}}}"
+    ]
+  },
+  "sort": [
+    1673337119169
+  ]
+}
