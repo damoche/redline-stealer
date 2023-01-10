@@ -1,0 +1,99 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.10",
+  "_type": "_doc",
+  "_id": "0SSqmoUB6tWvkp2uKVgD",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "10.0.16.136",
+      "name": "windows",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "image": "C:\\\\Users\\\\wazuh\\\\Downloads\\\\Redlinestealer\\\\redline.exe",
+          "processGuid": "{6656408f-191d-63bd-e401-000000000900}",
+          "processId": "4108",
+          "utcTime": "2023-01-10 07:51:57.937",
+          "targetFilename": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe",
+          "creationUtcTime": "2023-01-10 07:51:57.937",
+          "user": "WINDOWS\\\\wazuh"
+        },
+        "system": {
+          "eventID": "11",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"File created:\r\nRuleName: -\r\nUtcTime: 2023-01-10 07:51:57.937\r\nProcessGuid: {6656408f-191d-63bd-e401-000000000900}\r\nProcessId: 4108\r\nImage: C:\\Users\\wazuh\\Downloads\\Redlinestealer\\redline.exe\r\nTargetFilename: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\r\nCreationUtcTime: 2023-01-10 07:51:57.937\r\nUser: WINDOWS\\wazuh\"",
+          "version": "2",
+          "systemTime": "2023-01-10T07:51:57.9524219Z",
+          "eventRecordID": "40028",
+          "threadID": "3908",
+          "computer": "windows",
+          "task": "11",
+          "processID": "2644",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "rule": {
+      "firedtimes": 2,
+      "mail": true,
+      "level": 15,
+      "description": "Executable file dropped in folder commonly used by malware.",
+      "groups": [
+        "sysmon_eid11_detections"
+      ],
+      "mitre": {
+        "technique": [
+          "Ingress Tool Transfer"
+        ],
+        "id": [
+          "T1105"
+        ],
+        "tactic": [
+          "Command and Control"
+        ]
+      },
+      "id": "92204"
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"11\",\"version\":\"2\",\"level\":\"4\",\"task\":\"11\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:57.9524219Z\",\"eventRecordID\":\"40028\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"File created:\\r\\nRuleName: -\\r\\nUtcTime: 2023-01-10 07:51:57.937\\r\\nProcessGuid: {6656408f-191d-63bd-e401-000000000900}\\r\\nProcessId: 4108\\r\\nImage: C:\\\\Users\\\\wazuh\\\\Downloads\\\\Redlinestealer\\\\redline.exe\\r\\nTargetFilename: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\r\\nCreationUtcTime: 2023-01-10 07:51:57.937\\r\\nUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"utcTime\":\"2023-01-10 07:51:57.937\",\"processGuid\":\"{6656408f-191d-63bd-e401-000000000900}\",\"processId\":\"4108\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\Downloads\\\\\\\\Redlinestealer\\\\\\\\redline.exe\",\"targetFilename\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\",\"creationUtcTime\":\"2023-01-10 07:51:57.937\",\"user\":\"WINDOWS\\\\\\\\wazuh\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-10T07:51:59.000Z",
+    "location": "EventChannel",
+    "id": "1673337119.423396",
+    "timestamp": "2023-01-10T07:51:59.000+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-10T07:51:59.000Z"
+    ],
+    "timestamp": [
+      "2023-01-10T07:51:59.000Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@windows@/opensearch-dashboards-highlighted-field@"
+    ],
+    "full_log": [
+      "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"11\",\"version\":\"2\",\"level\":\"4\",\"task\":\"11\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:57.9524219Z\",\"eventRecordID\":\"40028\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"File created:\\r\\nRuleName: -\\r\\nUtcTime: 2023-01-10 07:51:57.937\\r\\nProcessGuid: {6656408f-191d-63bd-e401-000000000900}\\r\\nProcessId: 4108\\r\\nImage: C:\\\\Users\\\\wazuh\\\\Downloads\\\\Redlinestealer\\\\redline.exe\\r\\nTargetFilename: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\r\\nCreationUtcTime: 2023-01-10 07:51:57.937\\r\\nUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"utcTime\":\"2023-01-10 07:51:57.937\",\"processGuid\":\"{6656408f-191d-63bd-e401-000000000900}\",\"processId\":\"4108\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\Downloads\\\\\\\\Redlinestealer\\\\\\\\redline.exe\",\"targetFilename\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\",\"creationUtcTime\":\"2023-01-10 07:51:57.937\",\"user\":\"WINDOWS\\\\\\\\wazuh\"}}}"
+    ]
+  },
+  "sort": [
+    1673337119000
+  ]
+}
