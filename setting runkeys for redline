@@ -1,0 +1,80 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.10",
+  "_type": "_doc",
+  "_id": "1iSqmoUB6tWvkp2uKVgD",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "10.0.16.136",
+      "name": "windows",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "image": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe",
+          "targetObject": "HKU\\\\S-1-5-21-528461584-3828116929-3337176586-1000\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Explorer\\\\User Shell Folders\\\\Startup",
+          "processGuid": "{6656408f-191e-63bd-e501-000000000900}",
+          "processId": "3056",
+          "utcTime": "2023-01-10 07:51:58.436",
+          "ruleName": "technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder",
+          "details": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\",
+          "eventType": "SetValue",
+          "user": "WINDOWS\\\\wazuh"
+        },
+        "system": {
+          "eventID": "13",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Registry value set:\r\nRuleName: technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder\r\nEventType: SetValue\r\nUtcTime: 2023-01-10 07:51:58.436\r\nProcessGuid: {6656408f-191e-63bd-e501-000000000900}\r\nProcessId: 3056\r\nImage: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\r\nTargetObject: HKU\\S-1-5-21-528461584-3828116929-3337176586-1000\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\\Startup\r\nDetails: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\\r\nUser: WINDOWS\\wazuh\"",
+          "version": "2",
+          "systemTime": "2023-01-10T07:51:58.4644690Z",
+          "eventRecordID": "40033",
+          "threadID": "3908",
+          "computer": "windows",
+          "task": "13",
+          "processID": "2644",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"13\",\"version\":\"2\",\"level\":\"4\",\"task\":\"13\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.4644690Z\",\"eventRecordID\":\"40033\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Registry value set:\\r\\nRuleName: technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder\\r\\nEventType: SetValue\\r\\nUtcTime: 2023-01-10 07:51:58.436\\r\\nProcessGuid: {6656408f-191e-63bd-e501-000000000900}\\r\\nProcessId: 3056\\r\\nImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\r\\nTargetObject: HKU\\\\S-1-5-21-528461584-3828116929-3337176586-1000\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Explorer\\\\User Shell Folders\\\\Startup\\r\\nDetails: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\\\r\\nUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder\",\"eventType\":\"SetValue\",\"utcTime\":\"2023-01-10 07:51:58.436\",\"processGuid\":\"{6656408f-191e-63bd-e501-000000000900}\",\"processId\":\"3056\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\",\"targetObject\":\"HKU\\\\\\\\S-1-5-21-528461584-3828116929-3337176586-1000\\\\\\\\SOFTWARE\\\\\\\\Microsoft\\\\\\\\Windows\\\\\\\\CurrentVersion\\\\\\\\Explorer\\\\\\\\User Shell Folders\\\\\\\\Startup\",\"details\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\\",\"user\":\"WINDOWS\\\\\\\\wazuh\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-10T07:51:59.118Z",
+    "location": "EventChannel",
+    "id": "1673337119.430663",
+    "timestamp": "2023-01-10T07:51:59.118+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-10T07:51:59.118Z"
+    ],
+    "timestamp": [
+      "2023-01-10T07:51:59.118Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@windows@/opensearch-dashboards-highlighted-field@"
+    ],
+    "full_log": [
+      "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"13\",\"version\":\"2\",\"level\":\"4\",\"task\":\"13\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.4644690Z\",\"eventRecordID\":\"40033\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Registry value set:\\r\\nRuleName: technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder\\r\\nEventType: SetValue\\r\\nUtcTime: 2023-01-10 07:51:58.436\\r\\nProcessGuid: {6656408f-191e-63bd-e501-000000000900}\\r\\nProcessId: 3056\\r\\nImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\r\\nTargetObject: HKU\\\\S-1-5-21-528461584-3828116929-3337176586-1000\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Explorer\\\\User Shell Folders\\\\Startup\\r\\nDetails: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\\\r\\nUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder\",\"eventType\":\"SetValue\",\"utcTime\":\"2023-01-10 07:51:58.436\",\"processGuid\":\"{6656408f-191e-63bd-e501-000000000900}\",\"processId\":\"3056\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\",\"targetObject\":\"HKU\\\\\\\\S-1-5-21-528461584-3828116929-3337176586-1000\\\\\\\\SOFTWARE\\\\\\\\Microsoft\\\\\\\\Windows\\\\\\\\CurrentVersion\\\\\\\\Explorer\\\\\\\\User Shell Folders\\\\\\\\Startup\",\"details\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\\",\"user\":\"WINDOWS\\\\\\\\wazuh\"}}}"
+    ]
+  },
+  "sort": [
+    1673337119118
+  ]
+}
