@@ -1,0 +1,80 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.10",
+  "_type": "_doc",
+  "_id": "3ySqmoUB6tWvkp2uLFjo",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "10.0.16.136",
+      "name": "windows",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "image": "C:\\\\Windows\\\\system32\\\\svchost.exe",
+          "targetObject": "HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Schedule\\\\TaskCache\\\\Tree\\\\nbveek.exe\\\\Index",
+          "processGuid": "{6656408f-157b-63bd-1900-000000000900}",
+          "processId": "1148",
+          "utcTime": "2023-01-10 07:51:58.888",
+          "ruleName": "technique_id=T1053,technique_name=Scheduled Task",
+          "details": "DWORD (0x00000003)",
+          "eventType": "SetValue",
+          "user": "NT AUTHORITY\\\\SYSTEM"
+        },
+        "system": {
+          "eventID": "13",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Registry value set:\r\nRuleName: technique_id=T1053,technique_name=Scheduled Task\r\nEventType: SetValue\r\nUtcTime: 2023-01-10 07:51:58.888\r\nProcessGuid: {6656408f-157b-63bd-1900-000000000900}\r\nProcessId: 1148\r\nImage: C:\\Windows\\system32\\svchost.exe\r\nTargetObject: HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\nbveek.exe\\Index\r\nDetails: DWORD (0x00000003)\r\nUser: NT AUTHORITY\\SYSTEM\"",
+          "version": "2",
+          "systemTime": "2023-01-10T07:51:58.8921582Z",
+          "eventRecordID": "40042",
+          "threadID": "3908",
+          "computer": "windows",
+          "task": "13",
+          "processID": "2644",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"13\",\"version\":\"2\",\"level\":\"4\",\"task\":\"13\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.8921582Z\",\"eventRecordID\":\"40042\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Registry value set:\\r\\nRuleName: technique_id=T1053,technique_name=Scheduled Task\\r\\nEventType: SetValue\\r\\nUtcTime: 2023-01-10 07:51:58.888\\r\\nProcessGuid: {6656408f-157b-63bd-1900-000000000900}\\r\\nProcessId: 1148\\r\\nImage: C:\\\\Windows\\\\system32\\\\svchost.exe\\r\\nTargetObject: HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Schedule\\\\TaskCache\\\\Tree\\\\nbveek.exe\\\\Index\\r\\nDetails: DWORD (0x00000003)\\r\\nUser: NT AUTHORITY\\\\SYSTEM\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1053,technique_name=Scheduled Task\",\"eventType\":\"SetValue\",\"utcTime\":\"2023-01-10 07:51:58.888\",\"processGuid\":\"{6656408f-157b-63bd-1900-000000000900}\",\"processId\":\"1148\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\svchost.exe\",\"targetObject\":\"HKLM\\\\\\\\SOFTWARE\\\\\\\\Microsoft\\\\\\\\Windows NT\\\\\\\\CurrentVersion\\\\\\\\Schedule\\\\\\\\TaskCache\\\\\\\\Tree\\\\\\\\nbveek.exe\\\\\\\\Index\",\"details\":\"DWORD (0x00000003)\",\"user\":\"NT AUTHORITY\\\\\\\\SYSTEM\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-10T07:51:59.329Z",
+    "location": "EventChannel",
+    "id": "1673337119.430663",
+    "timestamp": "2023-01-10T07:51:59.329+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-10T07:51:59.329Z"
+    ],
+    "timestamp": [
+      "2023-01-10T07:51:59.329Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@windows@/opensearch-dashboards-highlighted-field@"
+    ],
+    "full_log": [
+      "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"13\",\"version\":\"2\",\"level\":\"4\",\"task\":\"13\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.8921582Z\",\"eventRecordID\":\"40042\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Registry value set:\\r\\nRuleName: technique_id=T1053,technique_name=Scheduled Task\\r\\nEventType: SetValue\\r\\nUtcTime: 2023-01-10 07:51:58.888\\r\\nProcessGuid: {6656408f-157b-63bd-1900-000000000900}\\r\\nProcessId: 1148\\r\\nImage: C:\\\\Windows\\\\system32\\\\svchost.exe\\r\\nTargetObject: HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Schedule\\\\TaskCache\\\\Tree\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\\\Index\\r\\nDetails: DWORD (0x00000003)\\r\\nUser: NT AUTHORITY\\\\SYSTEM\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1053,technique_name=Scheduled Task\",\"eventType\":\"SetValue\",\"utcTime\":\"2023-01-10 07:51:58.888\",\"processGuid\":\"{6656408f-157b-63bd-1900-000000000900}\",\"processId\":\"1148\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\svchost.exe\",\"targetObject\":\"HKLM\\\\\\\\SOFTWARE\\\\\\\\Microsoft\\\\\\\\Windows NT\\\\\\\\CurrentVersion\\\\\\\\Schedule\\\\\\\\TaskCache\\\\\\\\Tree\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\\\\\\\Index\",\"details\":\"DWORD (0x00000003)\",\"user\":\"NT AUTHORITY\\\\\\\\SYSTEM\"}}}"
+    ]
+  },
+  "sort": [
+    1673337119329
+  ]
+}
