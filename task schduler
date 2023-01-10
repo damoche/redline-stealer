@@ -1,0 +1,94 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.10",
+  "_type": "_doc",
+  "_id": "2SSqmoUB6tWvkp2uKVgD",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "10.0.16.136",
+      "name": "windows",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "schtasks.exe",
+          "image": "C:\\\\Windows\\\\SysWOW64\\\\schtasks.exe",
+          "product": "Microsoft® Windows® Operating System",
+          "parentProcessGuid": "{6656408f-191e-63bd-e501-000000000900}",
+          "description": "Task Scheduler Configuration Tool",
+          "logonGuid": "{6656408f-1593-63bd-d281-030000000000}",
+          "parentCommandLine": "\\\"C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\\"",
+          "processGuid": "{6656408f-191e-63bd-e701-000000000900}",
+          "logonId": "0x381d2",
+          "parentProcessId": "3056",
+          "processId": "6136",
+          "currentDirectory": "C:\\\\Users\\\\wazuh\\\\Downloads\\\\Redlinestealer\\\\",
+          "utcTime": "2023-01-10 07:51:58.619",
+          "hashes": "SHA1=ABE9A4C4B549CB7F68B90EB2AE4012037B8BD221,MD5=48C2FE20575769DE916F48EF0676A965,SHA256=ABCD98A854E034F464DB23A8954208B52A6FD15E6F94B8593004E7932E8F3CFC,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05",
+          "parentImage": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe",
+          "ruleName": "technique_id=T1053,technique_name=Scheduled Tasks",
+          "company": "Microsoft Corporation",
+          "commandLine": "\\\"C:\\\\Windows\\\\System32\\\\schtasks.exe\\\" /Create /SC MINUTE /MO 1 /TN nbveek.exe /TR \\\"C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\\" /F",
+          "integrityLevel": "High",
+          "fileVersion": "10.0.19041.1503 (WinBuild.160101.0800)",
+          "user": "WINDOWS\\\\wazuh",
+          "terminalSessionId": "1",
+          "parentUser": "WINDOWS\\\\wazuh"
+        },
+        "system": {
+          "eventID": "1",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process Create:\r\nRuleName: technique_id=T1053,technique_name=Scheduled Tasks\r\nUtcTime: 2023-01-10 07:51:58.619\r\nProcessGuid: {6656408f-191e-63bd-e701-000000000900}\r\nProcessId: 6136\r\nImage: C:\\Windows\\SysWOW64\\schtasks.exe\r\nFileVersion: 10.0.19041.1503 (WinBuild.160101.0800)\r\nDescription: Task Scheduler Configuration Tool\r\nProduct: Microsoft® Windows® Operating System\r\nCompany: Microsoft Corporation\r\nOriginalFileName: schtasks.exe\r\nCommandLine: \"C:\\Windows\\System32\\schtasks.exe\" /Create /SC MINUTE /MO 1 /TN nbveek.exe /TR \"C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\" /F\r\nCurrentDirectory: C:\\Users\\wazuh\\Downloads\\Redlinestealer\\\r\nUser: WINDOWS\\wazuh\r\nLogonGuid: {6656408f-1593-63bd-d281-030000000000}\r\nLogonId: 0x381D2\r\nTerminalSessionId: 1\r\nIntegrityLevel: High\r\nHashes: SHA1=ABE9A4C4B549CB7F68B90EB2AE4012037B8BD221,MD5=48C2FE20575769DE916F48EF0676A965,SHA256=ABCD98A854E034F464DB23A8954208B52A6FD15E6F94B8593004E7932E8F3CFC,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05\r\nParentProcessGuid: {6656408f-191e-63bd-e501-000000000900}\r\nParentProcessId: 3056\r\nParentImage: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\r\nParentCommandLine: \"C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\" \r\nParentUser: WINDOWS\\wazuh\"",
+          "version": "5",
+          "systemTime": "2023-01-10T07:51:58.6227691Z",
+          "eventRecordID": "40036",
+          "threadID": "3908",
+          "computer": "windows",
+          "task": "1",
+          "processID": "2644",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.6227691Z\",\"eventRecordID\":\"40036\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1053,technique_name=Scheduled Tasks\\r\\nUtcTime: 2023-01-10 07:51:58.619\\r\\nProcessGuid: {6656408f-191e-63bd-e701-000000000900}\\r\\nProcessId: 6136\\r\\nImage: C:\\\\Windows\\\\SysWOW64\\\\schtasks.exe\\r\\nFileVersion: 10.0.19041.1503 (WinBuild.160101.0800)\\r\\nDescription: Task Scheduler Configuration Tool\\r\\nProduct: Microsoft® Windows® Operating System\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: schtasks.exe\\r\\nCommandLine: \\\"C:\\\\Windows\\\\System32\\\\schtasks.exe\\\" /Create /SC MINUTE /MO 1 /TN nbveek.exe /TR \\\"C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\\" /F\\r\\nCurrentDirectory: C:\\\\Users\\\\wazuh\\\\Downloads\\\\Redlinestealer\\\\\\r\\nUser: WINDOWS\\\\wazuh\\r\\nLogonGuid: {6656408f-1593-63bd-d281-030000000000}\\r\\nLogonId: 0x381D2\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: High\\r\\nHashes: SHA1=ABE9A4C4B549CB7F68B90EB2AE4012037B8BD221,MD5=48C2FE20575769DE916F48EF0676A965,SHA256=ABCD98A854E034F464DB23A8954208B52A6FD15E6F94B8593004E7932E8F3CFC,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05\\r\\nParentProcessGuid: {6656408f-191e-63bd-e501-000000000900}\\r\\nParentProcessId: 3056\\r\\nParentImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\r\\nParentCommandLine: \\\"C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\\" \\r\\nParentUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1053,technique_name=Scheduled Tasks\",\"utcTime\":\"2023-01-10 07:51:58.619\",\"processGuid\":\"{6656408f-191e-63bd-e701-000000000900}\",\"processId\":\"6136\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\schtasks.exe\",\"fileVersion\":\"10.0.19041.1503 (WinBuild.160101.0800)\",\"description\":\"Task Scheduler Configuration Tool\",\"product\":\"Microsoft® Windows® Operating System\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"schtasks.exe\",\"commandLine\":\"\\\\\\\"C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\schtasks.exe\\\\\\\" /Create /SC MINUTE /MO 1 /TN nbveek.exe /TR \\\\\\\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\\\\\\\" /F\",\"currentDirectory\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\Downloads\\\\\\\\Redlinestealer\\\\\\\\\",\"user\":\"WINDOWS\\\\\\\\wazuh\",\"logonGuid\":\"{6656408f-1593-63bd-d281-030000000000}\",\"logonId\":\"0x381d2\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"High\",\"hashes\":\"SHA1=ABE9A4C4B549CB7F68B90EB2AE4012037B8BD221,MD5=48C2FE20575769DE916F48EF0676A965,SHA256=ABCD98A854E034F464DB23A8954208B52A6FD15E6F94B8593004E7932E8F3CFC,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05\",\"parentProcessGuid\":\"{6656408f-191e-63bd-e501-000000000900}\",\"parentProcessId\":\"3056\",\"parentImage\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\",\"parentCommandLine\":\"\\\\\\\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\\\\\\\"\",\"parentUser\":\"WINDOWS\\\\\\\\wazuh\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-10T07:51:59.169Z",
+    "location": "EventChannel",
+    "id": "1673337119.430663",
+    "timestamp": "2023-01-10T07:51:59.169+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-10T07:51:59.169Z"
+    ],
+    "timestamp": [
+      "2023-01-10T07:51:59.169Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@windows@/opensearch-dashboards-highlighted-field@"
+    ],
+    "full_log": [
+      "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:51:58.6227691Z\",\"eventRecordID\":\"40036\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1053,technique_name=Scheduled Tasks\\r\\nUtcTime: 2023-01-10 07:51:58.619\\r\\nProcessGuid: {6656408f-191e-63bd-e701-000000000900}\\r\\nProcessId: 6136\\r\\nImage: C:\\\\Windows\\\\SysWOW64\\\\schtasks.exe\\r\\nFileVersion: 10.0.19041.1503 (WinBuild.160101.0800)\\r\\nDescription: Task Scheduler Configuration Tool\\r\\nProduct: Microsoft® Windows® Operating System\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: schtasks.exe\\r\\nCommandLine: \\\"C:\\\\Windows\\\\System32\\\\schtasks.exe\\\" /Create /SC MINUTE /MO 1 /TN @opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@ /TR \\\"C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\\" /F\\r\\nCurrentDirectory: C:\\\\Users\\\\wazuh\\\\Downloads\\\\Redlinestealer\\\\\\r\\nUser: WINDOWS\\\\wazuh\\r\\nLogonGuid: {6656408f-1593-63bd-d281-030000000000}\\r\\nLogonId: 0x381D2\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: High\\r\\nHashes: SHA1=ABE9A4C4B549CB7F68B90EB2AE4012037B8BD221,MD5=48C2FE20575769DE916F48EF0676A965,SHA256=ABCD98A854E034F464DB23A8954208B52A6FD15E6F94B8593004E7932E8F3CFC,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05\\r\\nParentProcessGuid: {6656408f-191e-63bd-e501-000000000900}\\r\\nParentProcessId: 3056\\r\\nParentImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\r\\nParentCommandLine: \\\"C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\\" \\r\\nParentUser: WINDOWS\\\\wazuh\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1053,technique_name=Scheduled Tasks\",\"utcTime\":\"2023-01-10 07:51:58.619\",\"processGuid\":\"{6656408f-191e-63bd-e701-000000000900}\",\"processId\":\"6136\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\SysWOW64\\\\\\\\schtasks.exe\",\"fileVersion\":\"10.0.19041.1503 (WinBuild.160101.0800)\",\"description\":\"Task Scheduler Configuration Tool\",\"product\":\"Microsoft® Windows® Operating System\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"schtasks.exe\",\"commandLine\":\"\\\\\\\"C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\schtasks.exe\\\\\\\" /Create /SC MINUTE /MO 1 /TN @opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@ /TR \\\\\\\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\\\\\\" /F\",\"currentDirectory\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\Downloads\\\\\\\\Redlinestealer\\\\\\\\\",\"user\":\"WINDOWS\\\\\\\\wazuh\",\"logonGuid\":\"{6656408f-1593-63bd-d281-030000000000}\",\"logonId\":\"0x381d2\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"High\",\"hashes\":\"SHA1=ABE9A4C4B549CB7F68B90EB2AE4012037B8BD221,MD5=48C2FE20575769DE916F48EF0676A965,SHA256=ABCD98A854E034F464DB23A8954208B52A6FD15E6F94B8593004E7932E8F3CFC,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05\",\"parentProcessGuid\":\"{6656408f-191e-63bd-e501-000000000900}\",\"parentProcessId\":\"3056\",\"parentImage\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\",\"parentCommandLine\":\"\\\\\\\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\\\\\\"\",\"parentUser\":\"WINDOWS\\\\\\\\wazuh\"}}}"
+    ]
+  },
+  "sort": [
+    1673337119169
+  ]
+}
