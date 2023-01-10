@@ -1,0 +1,89 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.10",
+  "_type": "_doc",
+  "_id": "6SSqmoUB6tWvkp2uNFi5",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "10.0.16.136",
+      "name": "windows",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "image": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe",
+          "parentProcessGuid": "{6656408f-157b-63bd-1900-000000000900}",
+          "logonGuid": "{6656408f-1593-63bd-1382-030000000000}",
+          "parentCommandLine": "C:\\\\Windows\\\\system32\\\\svchost.exe -k netsvcs -p -s Schedule",
+          "processGuid": "{6656408f-1921-63bd-e901-000000000900}",
+          "logonId": "0x38213",
+          "parentProcessId": "1148",
+          "processId": "4284",
+          "currentDirectory": "C:\\\\Windows\\\\system32\\\\",
+          "utcTime": "2023-01-10 07:52:01.917",
+          "hashes": "SHA1=AAFB9168ED62DC2EBEEB8428C3A39A6525142F6C,MD5=15F57D45FE2A1E8DA248CF9B3723D775,SHA256=BC73998864190A9562A117C1E4587CC39DE1BC1017B369F4AA0C736CD39B353A,IMPHASH=DD0E4EFABC62274A7CFB37B4B7A2951D",
+          "parentImage": "C:\\\\Windows\\\\System32\\\\svchost.exe",
+          "ruleName": "technique_id=T1036,technique_name=Masquerading",
+          "commandLine": "C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe",
+          "integrityLevel": "Medium",
+          "user": "WINDOWS\\\\wazuh",
+          "terminalSessionId": "1",
+          "parentUser": "NT AUTHORITY\\\\SYSTEM"
+        },
+        "system": {
+          "eventID": "1",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process Create:\r\nRuleName: technique_id=T1036,technique_name=Masquerading\r\nUtcTime: 2023-01-10 07:52:01.917\r\nProcessGuid: {6656408f-1921-63bd-e901-000000000900}\r\nProcessId: 4284\r\nImage: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\r\nFileVersion: -\r\nDescription: -\r\nProduct: -\r\nCompany: -\r\nOriginalFileName: -\r\nCommandLine: C:\\Users\\wazuh\\AppData\\Local\\Temp\\d003af69b2\\nbveek.exe\r\nCurrentDirectory: C:\\Windows\\system32\\\r\nUser: WINDOWS\\wazuh\r\nLogonGuid: {6656408f-1593-63bd-1382-030000000000}\r\nLogonId: 0x38213\r\nTerminalSessionId: 1\r\nIntegrityLevel: Medium\r\nHashes: SHA1=AAFB9168ED62DC2EBEEB8428C3A39A6525142F6C,MD5=15F57D45FE2A1E8DA248CF9B3723D775,SHA256=BC73998864190A9562A117C1E4587CC39DE1BC1017B369F4AA0C736CD39B353A,IMPHASH=DD0E4EFABC62274A7CFB37B4B7A2951D\r\nParentProcessGuid: {6656408f-157b-63bd-1900-000000000900}\r\nParentProcessId: 1148\r\nParentImage: C:\\Windows\\System32\\svchost.exe\r\nParentCommandLine: C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s Schedule\r\nParentUser: NT AUTHORITY\\SYSTEM\"",
+          "version": "5",
+          "systemTime": "2023-01-10T07:52:01.9195948Z",
+          "eventRecordID": "40051",
+          "threadID": "3908",
+          "computer": "windows",
+          "task": "1",
+          "processID": "2644",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:52:01.9195948Z\",\"eventRecordID\":\"40051\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1036,technique_name=Masquerading\\r\\nUtcTime: 2023-01-10 07:52:01.917\\r\\nProcessGuid: {6656408f-1921-63bd-e901-000000000900}\\r\\nProcessId: 4284\\r\\nImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\r\\nFileVersion: -\\r\\nDescription: -\\r\\nProduct: -\\r\\nCompany: -\\r\\nOriginalFileName: -\\r\\nCommandLine: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\nbveek.exe\\r\\nCurrentDirectory: C:\\\\Windows\\\\system32\\\\\\r\\nUser: WINDOWS\\\\wazuh\\r\\nLogonGuid: {6656408f-1593-63bd-1382-030000000000}\\r\\nLogonId: 0x38213\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: Medium\\r\\nHashes: SHA1=AAFB9168ED62DC2EBEEB8428C3A39A6525142F6C,MD5=15F57D45FE2A1E8DA248CF9B3723D775,SHA256=BC73998864190A9562A117C1E4587CC39DE1BC1017B369F4AA0C736CD39B353A,IMPHASH=DD0E4EFABC62274A7CFB37B4B7A2951D\\r\\nParentProcessGuid: {6656408f-157b-63bd-1900-000000000900}\\r\\nParentProcessId: 1148\\r\\nParentImage: C:\\\\Windows\\\\System32\\\\svchost.exe\\r\\nParentCommandLine: C:\\\\Windows\\\\system32\\\\svchost.exe -k netsvcs -p -s Schedule\\r\\nParentUser: NT AUTHORITY\\\\SYSTEM\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1036,technique_name=Masquerading\",\"utcTime\":\"2023-01-10 07:52:01.917\",\"processGuid\":\"{6656408f-1921-63bd-e901-000000000900}\",\"processId\":\"4284\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\",\"commandLine\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\nbveek.exe\",\"currentDirectory\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\\",\"user\":\"WINDOWS\\\\\\\\wazuh\",\"logonGuid\":\"{6656408f-1593-63bd-1382-030000000000}\",\"logonId\":\"0x38213\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"Medium\",\"hashes\":\"SHA1=AAFB9168ED62DC2EBEEB8428C3A39A6525142F6C,MD5=15F57D45FE2A1E8DA248CF9B3723D775,SHA256=BC73998864190A9562A117C1E4587CC39DE1BC1017B369F4AA0C736CD39B353A,IMPHASH=DD0E4EFABC62274A7CFB37B4B7A2951D\",\"parentProcessGuid\":\"{6656408f-157b-63bd-1900-000000000900}\",\"parentProcessId\":\"1148\",\"parentImage\":\"C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\svchost.exe\",\"parentCommandLine\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\svchost.exe -k netsvcs -p -s Schedule\",\"parentUser\":\"NT AUTHORITY\\\\\\\\SYSTEM\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-10T07:52:02.989Z",
+    "location": "EventChannel",
+    "id": "1673337122.430663",
+    "timestamp": "2023-01-10T07:52:02.989+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-10T07:52:02.989Z"
+    ],
+    "timestamp": [
+      "2023-01-10T07:52:02.989Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@windows@/opensearch-dashboards-highlighted-field@"
+    ],
+    "full_log": [
+      "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-10T07:52:01.9195948Z\",\"eventRecordID\":\"40051\",\"processID\":\"2644\",\"threadID\":\"3908\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"windows\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1036,technique_name=Masquerading\\r\\nUtcTime: 2023-01-10 07:52:01.917\\r\\nProcessGuid: {6656408f-1921-63bd-e901-000000000900}\\r\\nProcessId: 4284\\r\\nImage: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\r\\nFileVersion: -\\r\\nDescription: -\\r\\nProduct: -\\r\\nCompany: -\\r\\nOriginalFileName: -\\r\\nCommandLine: C:\\\\Users\\\\wazuh\\\\AppData\\\\Local\\\\Temp\\\\d003af69b2\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\\r\\nCurrentDirectory: C:\\\\Windows\\\\system32\\\\\\r\\nUser: WINDOWS\\\\wazuh\\r\\nLogonGuid: {6656408f-1593-63bd-1382-030000000000}\\r\\nLogonId: 0x38213\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: Medium\\r\\nHashes: SHA1=AAFB9168ED62DC2EBEEB8428C3A39A6525142F6C,MD5=15F57D45FE2A1E8DA248CF9B3723D775,SHA256=BC73998864190A9562A117C1E4587CC39DE1BC1017B369F4AA0C736CD39B353A,IMPHASH=DD0E4EFABC62274A7CFB37B4B7A2951D\\r\\nParentProcessGuid: {6656408f-157b-63bd-1900-000000000900}\\r\\nParentProcessId: 1148\\r\\nParentImage: C:\\\\Windows\\\\System32\\\\svchost.exe\\r\\nParentCommandLine: C:\\\\Windows\\\\system32\\\\svchost.exe -k netsvcs -p -s Schedule\\r\\nParentUser: NT AUTHORITY\\\\SYSTEM\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1036,technique_name=Masquerading\",\"utcTime\":\"2023-01-10 07:52:01.917\",\"processGuid\":\"{6656408f-1921-63bd-e901-000000000900}\",\"processId\":\"4284\",\"image\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\",\"commandLine\":\"C:\\\\\\\\Users\\\\\\\\wazuh\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\d003af69b2\\\\\\\\@opensearch-dashboards-highlighted-field@nbveek.exe@/opensearch-dashboards-highlighted-field@\",\"currentDirectory\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\\",\"user\":\"WINDOWS\\\\\\\\wazuh\",\"logonGuid\":\"{6656408f-1593-63bd-1382-030000000000}\",\"logonId\":\"0x38213\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"Medium\",\"hashes\":\"SHA1=AAFB9168ED62DC2EBEEB8428C3A39A6525142F6C,MD5=15F57D45FE2A1E8DA248CF9B3723D775,SHA256=BC73998864190A9562A117C1E4587CC39DE1BC1017B369F4AA0C736CD39B353A,IMPHASH=DD0E4EFABC62274A7CFB37B4B7A2951D\",\"parentProcessGuid\":\"{6656408f-157b-63bd-1900-000000000900}\",\"parentProcessId\":\"1148\",\"parentImage\":\"C:\\\\\\\\Windows\\\\\\\\System32\\\\\\\\svchost.exe\",\"parentCommandLine\":\"C:\\\\\\\\Windows\\\\\\\\system32\\\\\\\\svchost.exe -k netsvcs -p -s Schedule\",\"parentUser\":\"NT AUTHORITY\\\\\\\\SYSTEM\"}}}"
+    ]
+  },
+  "sort": [
+    1673337122989
+  ]
+}
