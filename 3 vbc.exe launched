@@ -1,0 +1,91 @@
+{
+  "_index": "wazuh-archives-4.x-2023.01.16",
+  "_type": "_doc",
+  "_id": "QTjFvIUBcYjAzUZ5220n",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "agent": {
+      "ip": "192.168.94.134",
+      "name": "DESKTOP-FUGQNF4",
+      "id": "004"
+    },
+    "manager": {
+      "name": "wazuh"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "originalFileName": "vbc.exe",
+          "image": "C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\vbc.exe",
+          "product": "Microsoft® .NET Framework",
+          "parentProcessGuid": "{2db9add9-d02f-63c5-9d05-000000000d00}",
+          "description": "Visual Basic Command Line Compiler",
+          "logonGuid": "{2db9add9-88fb-63b2-6d3e-0a0000000000}",
+          "parentCommandLine": "\\\"C:\\\\Users\\\\Administrator\\\\Downloads\\\\Redline\\\\Redline.exe\\\"",
+          "processGuid": "{2db9add9-d031-63c5-a105-000000000d00}",
+          "logonId": "0xa3e6d",
+          "parentProcessId": "9860",
+          "processId": "4600",
+          "currentDirectory": "C:\\\\Users\\\\Administrator\\\\Downloads\\\\Redline\\\\",
+          "utcTime": "2023-01-16 22:31:13.176",
+          "hashes": "SHA1=71DFF876E4D5EDB6CEA78FEE7AA15845D4950E24,MD5=0A7608DB01CAE07792CEA95E792AA866,SHA256=C16336AB32195B08C1678220FBE0256FEE865F623E2B32FCFA4D9825FD68977E,IMPHASH=1460E2E6D7F8ECA4240B7C78FA619D15",
+          "parentImage": "C:\\\\Users\\\\Administrator\\\\Downloads\\\\Redline\\\\Redline.exe",
+          "ruleName": "technique_id=T1127,technique_name=Trusted Developer Utilities",
+          "company": "Microsoft Corporation",
+          "commandLine": "\\\"C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\vbc.exe\\\"",
+          "integrityLevel": "High",
+          "fileVersion": "14.8.4084.0",
+          "user": "DESKTOP-FUGQNF4\\\\Administrator",
+          "terminalSessionId": "1",
+          "parentUser": "DESKTOP-FUGQNF4\\\\Administrator"
+        },
+        "system": {
+          "eventID": "1",
+          "keywords": "0x8000000000000000",
+          "providerGuid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+          "level": "4",
+          "channel": "Microsoft-Windows-Sysmon/Operational",
+          "opcode": "0",
+          "message": "\"Process Create:\r\nRuleName: technique_id=T1127,technique_name=Trusted Developer Utilities\r\nUtcTime: 2023-01-16 22:31:13.176\r\nProcessGuid: {2db9add9-d031-63c5-a105-000000000d00}\r\nProcessId: 4600\r\nImage: C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe\r\nFileVersion: 14.8.4084.0\r\nDescription: Visual Basic Command Line Compiler\r\nProduct: Microsoft® .NET Framework\r\nCompany: Microsoft Corporation\r\nOriginalFileName: vbc.exe\r\nCommandLine: \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe\"\r\nCurrentDirectory: C:\\Users\\Administrator\\Downloads\\Redline\\\r\nUser: DESKTOP-FUGQNF4\\Administrator\r\nLogonGuid: {2db9add9-88fb-63b2-6d3e-0a0000000000}\r\nLogonId: 0xA3E6D\r\nTerminalSessionId: 1\r\nIntegrityLevel: High\r\nHashes: SHA1=71DFF876E4D5EDB6CEA78FEE7AA15845D4950E24,MD5=0A7608DB01CAE07792CEA95E792AA866,SHA256=C16336AB32195B08C1678220FBE0256FEE865F623E2B32FCFA4D9825FD68977E,IMPHASH=1460E2E6D7F8ECA4240B7C78FA619D15\r\nParentProcessGuid: {2db9add9-d02f-63c5-9d05-000000000d00}\r\nParentProcessId: 9860\r\nParentImage: C:\\Users\\Administrator\\Downloads\\Redline\\Redline.exe\r\nParentCommandLine: \"C:\\Users\\Administrator\\Downloads\\Redline\\Redline.exe\" \r\nParentUser: DESKTOP-FUGQNF4\\Administrator\"",
+          "version": "5",
+          "systemTime": "2023-01-16T22:31:13.2321580Z",
+          "eventRecordID": "11775",
+          "threadID": "684",
+          "computer": "DESKTOP-FUGQNF4",
+          "task": "1",
+          "processID": "2600",
+          "severityValue": "INFORMATION",
+          "providerName": "Microsoft-Windows-Sysmon"
+        }
+      }
+    },
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "full_log": "{\"win\":{\"system\":{\"providerName\":\"Microsoft-Windows-Sysmon\",\"providerGuid\":\"{5770385f-c22a-43e0-bf4c-06f5698ffbd9}\",\"eventID\":\"1\",\"version\":\"5\",\"level\":\"4\",\"task\":\"1\",\"opcode\":\"0\",\"keywords\":\"0x8000000000000000\",\"systemTime\":\"2023-01-16T22:31:13.2321580Z\",\"eventRecordID\":\"11775\",\"processID\":\"2600\",\"threadID\":\"684\",\"channel\":\"Microsoft-Windows-Sysmon/Operational\",\"computer\":\"DESKTOP-FUGQNF4\",\"severityValue\":\"INFORMATION\",\"message\":\"\\\"Process Create:\\r\\nRuleName: technique_id=T1127,technique_name=Trusted Developer Utilities\\r\\nUtcTime: 2023-01-16 22:31:13.176\\r\\nProcessGuid: {2db9add9-d031-63c5-a105-000000000d00}\\r\\nProcessId: 4600\\r\\nImage: C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\vbc.exe\\r\\nFileVersion: 14.8.4084.0\\r\\nDescription: Visual Basic Command Line Compiler\\r\\nProduct: Microsoft® .NET Framework\\r\\nCompany: Microsoft Corporation\\r\\nOriginalFileName: vbc.exe\\r\\nCommandLine: \\\"C:\\\\Windows\\\\Microsoft.NET\\\\Framework\\\\v4.0.30319\\\\vbc.exe\\\"\\r\\nCurrentDirectory: C:\\\\Users\\\\Administrator\\\\Downloads\\\\Redline\\\\\\r\\nUser: DESKTOP-FUGQNF4\\\\Administrator\\r\\nLogonGuid: {2db9add9-88fb-63b2-6d3e-0a0000000000}\\r\\nLogonId: 0xA3E6D\\r\\nTerminalSessionId: 1\\r\\nIntegrityLevel: High\\r\\nHashes: SHA1=71DFF876E4D5EDB6CEA78FEE7AA15845D4950E24,MD5=0A7608DB01CAE07792CEA95E792AA866,SHA256=C16336AB32195B08C1678220FBE0256FEE865F623E2B32FCFA4D9825FD68977E,IMPHASH=1460E2E6D7F8ECA4240B7C78FA619D15\\r\\nParentProcessGuid: {2db9add9-d02f-63c5-9d05-000000000d00}\\r\\nParentProcessId: 9860\\r\\nParentImage: C:\\\\Users\\\\Administrator\\\\Downloads\\\\Redline\\\\Redline.exe\\r\\nParentCommandLine: \\\"C:\\\\Users\\\\Administrator\\\\Downloads\\\\Redline\\\\Redline.exe\\\" \\r\\nParentUser: DESKTOP-FUGQNF4\\\\Administrator\\\"\"},\"eventdata\":{\"ruleName\":\"technique_id=T1127,technique_name=Trusted Developer Utilities\",\"utcTime\":\"2023-01-16 22:31:13.176\",\"processGuid\":\"{2db9add9-d031-63c5-a105-000000000d00}\",\"processId\":\"4600\",\"image\":\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\vbc.exe\",\"fileVersion\":\"14.8.4084.0\",\"description\":\"Visual Basic Command Line Compiler\",\"product\":\"Microsoft® .NET Framework\",\"company\":\"Microsoft Corporation\",\"originalFileName\":\"vbc.exe\",\"commandLine\":\"\\\\\\\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\vbc.exe\\\\\\\"\",\"currentDirectory\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Downloads\\\\\\\\Redline\\\\\\\\\",\"user\":\"DESKTOP-FUGQNF4\\\\\\\\Administrator\",\"logonGuid\":\"{2db9add9-88fb-63b2-6d3e-0a0000000000}\",\"logonId\":\"0xa3e6d\",\"terminalSessionId\":\"1\",\"integrityLevel\":\"High\",\"hashes\":\"SHA1=71DFF876E4D5EDB6CEA78FEE7AA15845D4950E24,MD5=0A7608DB01CAE07792CEA95E792AA866,SHA256=C16336AB32195B08C1678220FBE0256FEE865F623E2B32FCFA4D9825FD68977E,IMPHASH=1460E2E6D7F8ECA4240B7C78FA619D15\",\"parentProcessGuid\":\"{2db9add9-d02f-63c5-9d05-000000000d00}\",\"parentProcessId\":\"9860\",\"parentImage\":\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Downloads\\\\\\\\Redline\\\\\\\\Redline.exe\",\"parentCommandLine\":\"\\\\\\\"C:\\\\\\\\Users\\\\\\\\Administrator\\\\\\\\Downloads\\\\\\\\Redline\\\\\\\\Redline.exe\\\\\\\"\",\"parentUser\":\"DESKTOP-FUGQNF4\\\\\\\\Administrator\"}}}",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2023-01-16T22:49:19.452Z",
+    "location": "EventChannel",
+    "id": "1673909359.10593012",
+    "timestamp": "2023-01-16T22:49:19.452+0000"
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-01-16T22:49:19.452Z"
+    ],
+    "timestamp": [
+      "2023-01-16T22:49:19.452Z"
+    ]
+  },
+  "highlight": {
+    "agent.name": [
+      "@opensearch-dashboards-highlighted-field@DESKTOP-FUGQNF4@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1673909359452
+  ]
+}
